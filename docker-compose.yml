@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  start:
+    image: node:16.14.0-alpine3.15
+    volumes:
+      - ./:/app
+    working_dir: '/app'
+    stdin_open: true
+    tty: true
+    command: npm start
