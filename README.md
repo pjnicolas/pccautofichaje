@@ -22,8 +22,8 @@ Esta herramienta hace login con tu cuenta de Telegram para poder programar todos
 
 ## Ejecución del script
 
-1. Editar las variable de entorno `GENERATE_CALENDAR_*` a tu gusto en el archivo `.env`.
-2. General el JSON de calendario con `make generate`
-3. Revisar el archivo generado `calendar.json`. Aquí se muestran todos los fichajes que se van a programar en el siguiente paso. Eliminar alguna fecha si es festivo. Los fines de semana se filtran automáticamente.
-4. Ejecutar el script principal con `make schedule`. Esto te pedirá tu número de teléfono (necesitas meterlo con prefijo, e.g. `+34626123123`). Tras meterlo, te llegará un mensaje a tu Telegram con un código de verificación. Introdúcelo en el siguiente paso.
+1. Edita las variable de entorno `GENERATE_CALENDAR_*` a tu gusto en el archivo `.env`.
+2. Genera el JSON de calendario con `make generate`
+3. Revisar el archivo generado `calendar.json`. Aquí se muestran todos los fichajes que se van a programar en el siguiente paso. Elimina alguna fecha si es festivo. Los fines de semana se filtran automáticamente.
+4. Ejecuta el script principal con `make schedule`. Esto te pedirá tu número de teléfono (necesitas meterlo con prefijo, e.g. `+34626123123`). Tras meterlo, te llegará un mensaje a tu Telegram con un código de verificación. Introdúcelo en el siguiente paso.
 5. Listo, ya tienes todos tus fichajes programados. Si miras el log, verás que después de la linea `You should now be connected` hay otra linea muy larga con un token. Si copias ese token a la variable de entorno `STRING_SESSION` en el archivo `.env`, el script no te pedirá que te loguees la proxima vez que lo ejecutes.
