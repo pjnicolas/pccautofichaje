@@ -1,11 +1,15 @@
-.IPHONY: install
+.PHONY: install
 install:
 	docker-compose run start npm install
 
-.IPHONY: generate
+.PHONY: generate
 generate:
 	docker-compose run start npm run generate
 
-.IPHONY: schedule
+.PHONY: schedule
 schedule:
 	docker-compose run start
+
+.PHONY: clear
+clear:
+	docker-compose run start npm run clear
